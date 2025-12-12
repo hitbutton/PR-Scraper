@@ -1,0 +1,11 @@
+# Environment file with secrets
+.env
+
+# Saved invalid responses from API
+invalid_response*
+
+# CSV output
+vscode_prs.csv
+
+# Python cache
+__pycache__/
