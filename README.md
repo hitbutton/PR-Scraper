@@ -5,12 +5,12 @@ Extracts all PRs from the Microsoft VS Code repo via GitHub GraphQL API, and wri
 Fields extracted:
 `number`, `title`, `created_at`, `merged_at`, `user.type`, `base.ref`, `comments`, `additions`, `deletions`
 
-**Features:**
-Avoids GitHub Search 1000-result cap by subdividing time ranges
-Cursor pagination (handles all PRs across pages)
-Rate limit handling (auto-sleeps until reset time)
-Retry with exponential backoff on transient errors
-Graceful error recovery—skips failed ranges, writes to CSV incrementally
+##Features
+- Avoids GitHub Search 1000-result cap by subdividing time ranges
+- Cursor pagination (handles all PRs across pages)
+- Rate limit handling (auto-sleeps until reset time)
+- Retry with exponential backoff on transient errors
+- Graceful error recovery—skips failed ranges, writes to CSV incrementally
 
 ## Quick Start
 1. **Install**: `pip install -r requirements.txt`
