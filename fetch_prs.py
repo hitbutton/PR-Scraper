@@ -67,7 +67,7 @@ def normalize_pr(pr_node):
         "title": pr_node.get("title"),
         "created_at": pr_node.get("createdAt"),
         "merged_at": pr_node.get("mergedAt"),
-        "user.type": pr_node.get("author", {}).get("__typename"),
+        "user.type": (pr_node.get("author") or {}).get("__typename", "null"),
         "base.ref": pr_node.get("baseRefName"),
         "comments": pr_node.get("comments", {}).get("totalCount", 0),
         "additions": pr_node.get("additions", 0),
