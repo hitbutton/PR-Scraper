@@ -1,6 +1,6 @@
 # VS Code PR Exporter
 
-Extracts all PRs from the Microsoft VS Code repo via GitHub GraphQL API, and writes them to csv.
+Extracts Pull Request data from Microsoft's VSCode repo via GitHub GraphQL API, and writes the records to csv.
 
 Fields extracted:
 `number`, `title`, `created_at`, `merged_at`, `user.type`, `base.ref`, `comments`, `additions`, `deletions`
